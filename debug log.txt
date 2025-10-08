@@ -1,0 +1,36 @@
+PS C:\Users\samia\AppData\Local\Programs\Microsoft VS Code> & C:\Users\samia\AppData\Local\Microsoft\WindowsApps\python3.12.exe "c:/Users/samia/OneDrive/Desktop/Computer-Science-Thesis/Init Phi 2.py"
+C:\Users\samia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\huggingface_hub\file_download.py:982: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+Fetching 18 files:   0%|                                                                                                                                                    | 0/18 [00:00<?, ?it/s]Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+
+model-00002-of-00004.safetensors:   1%|█▊                                                                                                                             | 41.9M/2.94G [00:00<?, ?B/s]
+model-00001-of-00004.safetensors:   3%|███▋                                                                                                                           | 83.9M/2.94G [00:00<?, ?B/s]
+model-00004-of-00004.safetensors:   4%|████▌                                                                                                                          | 83.9M/2.31G [00:00<?, ?B/s]
+model-00004-of-00004.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.31G/2.31G [40:16<00:00, 920kB/s]
+model-00002-of-00004.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.94G/2.94G [49:09<00:00, 981kB/s]
+model-00003-of-00004.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.94G/2.94G [49:13<00:00, 977kB/s]
+model-00001-of-00004.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.94G/2.94G [50:05<00:00, 949kB/s]
+Fetching 18 files: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 18/18 [50:06<00:00, 167.04s/it]
+2025-10-07 23:39:44.630992: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.s: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.94G/2.94G [49:13<00:00, 1.41MB/s]
+2025-10-07 23:39:51.053098: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "c:\Users\samia\OneDrive\Desktop\Computer-Science-Thesis\Init Phi 2.py", line 10, in <module>
+    model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\transformers\models\auto\auto_factory.py", line 597, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\transformers\modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\samia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\transformers\modeling_utils.py", line 5143, in from_pretrained
+    dispatch_model(model, **device_map_kwargs)
+  File "C:\Users\samia\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\accelerate\big_modeling.py", line 504, in dispatch_model
+    raise ValueError(
+ValueError: You are trying to offload the whole model to the disk. Please use the `disk_offload` function instead.
+PS C:\Users\samia\AppData\Local\Programs\Microsoft VS Code> 
